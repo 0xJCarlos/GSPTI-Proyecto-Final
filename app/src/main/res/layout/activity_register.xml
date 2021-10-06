@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".register">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Nombre de Usuario" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/username" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirma tu contraseña"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/password" />
+
+   <Button
+       android:id="@+id/btnSignUp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Registrate"
+       android:layout_marginTop="50dp"
+       android:layout_below="@id/repassword" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Ya tienes Cuenta? Inicia Sesión"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/btnSignUp" />
+</RelativeLayout>
