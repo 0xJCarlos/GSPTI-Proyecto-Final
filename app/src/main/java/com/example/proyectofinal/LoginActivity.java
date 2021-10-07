@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
 
     EditText username, password;
-    Button btnLogin;
+    Button btnLogin, btnSignUp;
     DBHelper DB;
 
     @Override
@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username1);
         password = (EditText) findViewById(R.id.password1);
         btnLogin = (Button) findViewById(R.id.btnSignIn1);
+        btnSignUp = (Button) findViewById(R.id.btnSignUp1);
 
         DB = new DBHelper(this);
 
@@ -49,6 +50,14 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 }
 
+            }
+        });
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),register.class);
+                startActivity(intent);
             }
         });
 

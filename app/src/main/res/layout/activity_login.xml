@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:layout_marginTop="50dp"
+        android:inputType="textPassword"
         android:layout_below="@+id/username1" />
 
     <Button
@@ -29,5 +30,13 @@
         android:text=" Inicia Sesión"
         android:layout_marginTop="50dp"
         android:layout_below="@id/password1" />
+
+    <Button
+        android:id="@+id/btnSignUp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta? Registrate"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/btnSignIn1" />
 
 </RelativeLayout>
