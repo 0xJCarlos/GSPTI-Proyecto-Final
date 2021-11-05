@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createPost">
+
+    <EditText
+        android:id="@+id/postTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Titulo del Post" />
+
+    <EditText
+        android:id="@+id/postDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/postTitle"
+        android:layout_marginTop="20dp"
+        android:hint="Descripción del post"/>
+
+    <EditText
+        android:id="@+id/inputPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/postDescripcion"
+        android:hint="Precio"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/addPics"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputPrecio"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Añadir fotos"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/uploadPost"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addPics"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Subir post"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
