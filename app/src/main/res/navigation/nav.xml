@@ -15,5 +15,10 @@
         android:name="com.example.proyectofinal.HomeActivity"
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="com.example.proyectofinal.ProfileActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
 
 </navigation>
