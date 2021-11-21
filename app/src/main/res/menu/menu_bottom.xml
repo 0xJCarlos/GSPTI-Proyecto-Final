@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Inicio"
+          android:icon="@drawable/ic_home"
+          android:id="@+id/homeActivityA"/>
+
+    <item android:title="Añadir Post"
+          android:icon="@drawable/ic_add"
+          android:id="@+id/createPostA"/>
+
+    <item android:title="Perfil"
+          android:icon="@drawable/ic_person"
+          />
+</menu>

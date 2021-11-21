@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createPostA"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".createPost">
@@ -17,23 +18,23 @@
         android:id="@+id/postDescripcion"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
         android:layout_below="@id/postTitle"
         android:layout_marginTop="20dp"
-        android:hint="Descripción del post"/>
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descripción del post"
+        android:inputType="textMultiLine" />
 
     <EditText
         android:id="@+id/inputPrecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:layout_below="@id/postDescripcion"
-        android:hint="Precio"
         android:layout_centerHorizontal="true"
-        android:textAlignment="center"
-        android:inputType="numberDecimal" />
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/addPics"
@@ -60,5 +61,22 @@
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@color/white"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/PreviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/uploadPost"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        app:menu="@menu/menu_bottom"
+        android:layout_alignParentBottom="true"/>
+
 
 </RelativeLayout>

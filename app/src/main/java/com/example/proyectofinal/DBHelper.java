@@ -10,17 +10,20 @@ import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DBNAME = "Login.dB";
+    public static final String DBNAME = "Tienda.dB";
 
     public DBHelper(Context context) {
-        super(context, "Login.dB", null, 1);
+        super(context, "Tienda.dB", null, 1);
     }
 
 
     @Override
     public void onCreate(SQLiteDatabase MyDB) {
         MyDB.execSQL("create Table users (username TEXT primary key, password TEXT )");
+        MyDB.execSQL("create Table post (postTitle TEXT primary key, username TEXT, postDescription TEXT, inputPrecio TEXT, imagen BLOB)");
     }
+
+
 
     @Override
     public void onUpgrade(SQLiteDatabase MyDB, int i, int i1) {
